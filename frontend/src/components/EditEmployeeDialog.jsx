@@ -292,7 +292,7 @@ export default function FormDialog(props) {
                       ? formData.append("file", employee.file)
                       : "";
                     const response = await axios.put(
-                      "https://employee-management-system-zeta-eight.vercel.app/admin/edit/" + employee._id,
+                      "http://localhost/admin/edit/" + employee._id,
                       formData,
                       {
                         headers: {

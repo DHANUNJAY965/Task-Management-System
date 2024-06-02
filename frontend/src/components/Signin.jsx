@@ -73,7 +73,7 @@ function Signin() {
                 e.preventDefault();
                 try {
                   const response = await axios.post(
-                    "https://employee-management-system-zeta-eight.vercel.app/admin/signin",
+                    "http://localhost/admin/signin",
                     credentials
                   );
                   if (response.data.success) {

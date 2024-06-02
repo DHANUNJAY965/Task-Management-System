@@ -22,7 +22,7 @@ function Home() {
   useEffect(() => {
     const loadData = async () => {
       setLoad(true);
-      const response = await axios.get("https://employee-management-system-zeta-eight.vercel.app/admin/view", {
+      const response = await axios.get("http://localhost/admin/view", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },

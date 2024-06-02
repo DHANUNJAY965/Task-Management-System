@@ -32,7 +32,7 @@ export default function DeleteDialog(props) {
       const id = props.eid;
       console.log(id);
       const response = await axios.delete(
-        "https://employee-management-system-zeta-eight.vercel.app/admin/remove/" + id,
+        "http://localhost/admin/remove/" + id,
         {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),

@@ -290,7 +290,7 @@ export default function AddEmployeeDialog(props) {
                       ? formDataL.append("file", formData.file)
                       : "";
                     const response = await axios.post(
-                      "https://employee-management-system-zeta-eight.vercel.app/admin/add",
+                      "http://localhost/admin/add",
                       formDataL,
                       {
                         headers: {
